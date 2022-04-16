@@ -9,7 +9,7 @@ width, height = im.size
 for x in range(width):
     for y in range(height):
         r,g,b = im.getpixel((x,y))
-        if r > 128 and g > 128 and b > 128:
+        if r < 128 and g < 128 and b < 128:
             trees.append([float(x),float(0.0),float(y)])
 
 bytesMap = []
